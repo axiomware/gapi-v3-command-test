@@ -1,0 +1,10 @@
+{
+    "c": 332,
+    "channels": 7,
+    "interval": 160,
+    "type": 2,
+    "period": 2000,
+    "tmo": 5000,
+    "m": 5,
+    "r": "resTopicID"
+}

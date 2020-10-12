@@ -1,0 +1,20 @@
+{
+  "c" : 336,
+  "enable" : false,
+  "timing" : {
+    "channels" : 7,
+    "interval" : 1600,
+    "type" : 3,
+    "period" : 8000
+  },
+  "data" : [ {
+    "ad" : "020106100941584d204e455452554e5220453234",
+    "sd" : ""
+  }, {
+    "ad" : "0201061aff4C000215b87819c7bb2a45949073f0b3d2bd100ddeaffeedc5",
+    "sd" : ""
+  } ],
+  "tmo" : 30000,
+  "m": 5,
+  "r": "resTopicID"
+}

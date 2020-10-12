@@ -1,0 +1,32 @@
+{
+  "name": "gapi-v3-command-test",
+  "version": "1.0.0",
+  "description": "GAPI V3 test cases for API",
+  "main": "gapiv3-cmd.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/axiomware/gapi-v3-command-test.git"
+  },
+  "keywords": [
+    "Netrunr",
+    "Bluetooth",
+    "Beacons",
+    "Axiomware"
+  ],
+  "author": "Axiomware Systems, Inc.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/axiomware/gapi-v3-command-test/issues"
+  },
+  "homepage": "https://github.com/axiomware/gapi-v3-command-test#readme",
+  "dependencies": {
+    "minimist": "^1.2.5",
+    "mqtt": "^4.2.1",
+    "mqtt-pattern": "^1.2.0",
+    "ndjson": "^2.0.0",
+    "path": "^0.12.7"
+  }
+}
