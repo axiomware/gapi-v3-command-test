@@ -49,13 +49,13 @@ This utility is used to log MQTT traffic from the Netrunr gateway. This example 
 
 ```bash
 # Log commands to screen
-node gapiv3-mqtt-logger.js -h 192.168.10.137 -p 1883 -t 'netrunrfe' -c
+node gapiv3-mqtt-logger.js -h "192.168.10.137" -p 1883 -t "netrunrfe" -c
 
 # Log data, events and heartbeat to screen
-node gapiv3-mqtt-logger.js -h 192.168.10.137 -p 1883 -t 'netrunrfe' -d -e -b
+node gapiv3-mqtt-logger.js -h "192.168.10.137" -p 1883 -t "netrunrfe" -d -e -b
 
 # Log BLE advertisements to screen and file
-node gapiv3-mqtt-logger.js -h 192.168.10.137 -p 1883 -t 'netrunrfe' -a -f 'adv_log.txt'
+node gapiv3-mqtt-logger.js -h "192.168.10.137" -p 1883 -t "netrunrfe" -a -f "adv_log.txt"
 ```
 ## Utility: gapiv3-cmd.js
 
@@ -64,19 +64,19 @@ This utility is used to send and receive command and response data from the GAPI
 ```bash
 # This command is used to query version information from the Gateway
 # Use MQTTV3.x protocol with response and correlation data inside the payload file version3.json
-node gapiv3-cmd.js -h '192.168.10.137' -p 1883 \
-  -t 'netrunrfe' \
-  -g 'bt78a35159ec10' \
-  -d data/v3/version3.json
+node gapiv3-cmd.js -h "192.168.10.137" -p 1883 \
+  -t "netrunrfe" \
+  -g "bt78a35159ec10" \
+  -d "data/v3/version3.json"
 
 # This command is used to query version information from the Gateway
 # Use MQTTV5 protocol with version5.json  with response and correlation data embedded in the MQTT packet
 node gapiv3-cmd.js -h '192.168.10.137' -p 1883 \
-  -t 'netrunrfe' \
-  -g 'bt78a35159ec10' \
-  -r 'respTopicID' \
+  -t "netrunrfe" \
+  -g "bt78a35159ec10" \
+  -r "respTopicID" \
   -m 10 \
-  -d data/v5/version5.json
+  -d "data/v5/version5.json"
 ```
 
 The data directory contains various other JSON data packages for other commands. Some changes are required insdie these files based on the Bluetooth address and other device specific information. Please review the contents of the JSON file before sending it to the Netrunr gateway.
